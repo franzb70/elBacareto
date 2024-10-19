@@ -1,0 +1,370 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.appHome {
+  align-items: center;
+  color: white;
+  justify-content: center;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.centerNoPad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceItem {
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.bottomButtons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.horizontalSpacing {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.titleLeft {
+  display: flex;
+  justify-content: left;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.timeList {
+  align-items: center;
+  justify-content: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 38px;
+}
+
+.timeListBooking {
+  border-radius: 20px;
+  align-items: center;
+  justify-content: left;
+  padding-top: 5px;
+  padding-left: 20px;
+  height: 38px;
+}
+
+.timeListAdmin {
+  align-items: center;
+  justify-content: left;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.timeListSelected {
+  border-radius: 20px;
+  align-items: center;
+  justify-content: left;
+  background-color: #EEE;
+  color: black;
+  padding-top: 5px;
+  padding-left: 20px;
+  height: 38px;
+}
+
+.nextBookingList {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.inputTextCorners {
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #EEE;
+  color: #777;
+}
+
+.inputTextBooking {
+  border: none;
+  width: 150px;
+  color: #777;
+}
+
+.serviceSelected {
+  background-color: #EEE;
+  color: #333
+}
+
+.googleMap {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.operatorSelected {
+  display: flex;
+  align-items: center;
+  border: 1px solid #CCC;
+  background-color: #EEE;
+  color: #333
+}
+
+.operatorPicture {
+  display: flex;
+  align-items: center;
+  border: 1px solid #CCC;
+  border-radius: 20px;
+}
+
+.leftNoPad {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+}
+
+.leftPadTop {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.leftPadBottom {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.tableSpace {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.menuSpace {
+  padding-left: 5px;
+}
+
+.buttonCustom {
+  height: 35px;
+}
+
+.buttonCustomAdmin {
+  height: 35px;
+  width: 90px;
+}
+
+.buttonCustomSettings {
+  height: 35px;
+  width: 200px;
+}
+
+.buttonCustomWidth {
+  height: 35px;
+  width: 100px;
+}
+
+.buttonCustomFree {
+  color: rgb(91, 146, 248) !important;
+  height: 35px;
+  width: 90px;
+}
+
+.paidService {
+  color: rgb(5, 167, 105) !important;
+}
+
+.datePicker {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.rightPadTop {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  padding-right: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+:root {
+ --header-height: 3.5rem;
+ --first-color: hsl(28, 88%, 62%);
+ --title-color: hsl(0, 0%, 95%);
+ --text-color: hsl(0, 53%, 7%);
+ --body-color: #B0E0E6  hsl(40, 64%, 95%);
+ --body-font: "Montserrat", sans-serif;
+ --second-font: "Dancing Script", cursive;
+ --h2-font-size: 1.25rem;
+ --small-font-size: 0.813rem;
+ --font-semi-bold: 600;
+ --z-tooltip: 10;
+ --z-fixed: 100;
+}
+
+body {
+ background-color: var(--body-color);
+ color: var(--text-color);
+ font-size: 14px;
+ font-family: var(--body-font);
+}
+
+.smallText {
+  font-size: smaller;
+}
+
+ul {
+ list-style: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+.hideItem {
+  display: none;
+}
+
+.hideSlot {
+  background-color: #999;
+}
+
+.pictureResize {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+}
+
+.messageWrn {
+  align-items: center;
+  color: red;
+  justify-content: center;
+}
+
+.messageInfo {
+  align-items: center;
+  color: black;
+  justify-content: center;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemsToLeft {
+  align-items: left;
+}
+
+.textGray {
+  color: #777;
+}
+
+.form-switch .form-check-input 
+{
+  width: 6em; 
+  height: 1.5em;
+}
+
+.selectBox {
+  width:80px;
+  height:30px;
+  border:0px;
+  outline:none;
+  background-color:#CCC;
+  color:#777;
+  border-radius: 8px;
+  text-indent: 10px;
+}
+
+.fieldset {
+  margin: 2px;
+  padding-bottom: 2px;    
+  border-radius: 8px;
+}
+
+.legend {
+  font-size: 14px;
+  color: #777;
+}

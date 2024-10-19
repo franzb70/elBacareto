@@ -1,0 +1,10 @@
+rm server/public/static/css/*
+rm server/public/static/js/*
+rm server/public/static/media/*
+rm -r server/public/static/css
+rm -r server/public/static/js
+rm -r server/public/static/media
+rm -r server/public/static
+rm server/public/*
+cp -r client/build/static server/public/static
+cp client/build/* server/public
