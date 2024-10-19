@@ -465,7 +465,7 @@ app.post("/confirm", verifyJWT, async (req, res) => {
 */
 app.get("/getconfiguration", async (req, res) => {
     try {
-        let clientDB = new MongoClient(process.env.MONGO_CLIENT)
+        let clientDB = new MongoClient(process.env.MONGODB_URI)
         await clientDB.connect()
         let configuration = await clientDB.db().collection('configuration')
 
@@ -483,8 +483,8 @@ app.get("/getconfiguration", async (req, res) => {
 /*
     Connect the Mongo DB, either Local (MONGO_CLIENT) or on Vercel (MONGODB_URI)
 */
-mongoose.connect(process.env.MONGO_CLIENT)
-.then(() => console.log(`Database ${process.env.MONGO_CLIENT} connected!`))
+mongoose.connect(process.env.MONGODB_URI)
+.then(() => console.log(`Database ${process.env.MONGODB_URI} connected!`))
 .catch((err) => console.log(err))
 
 
